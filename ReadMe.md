@@ -4,4 +4,6 @@ __INSTITUTO TECNOLÓGICO DE NUEVO LAREDO__
 >**Estudiante:** Juan Hernández Rosas  
 >**No. Control:** 19100199  
 >**Curso:** Programación Web  
+>**Docente:** Ing. Gerardo Pineda Zapata
+
 **Período Agosto-Diciembre 2022**
