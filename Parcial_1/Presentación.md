@@ -1,11 +1,17 @@
-#*Acerca De Mi*  
+# *Acerca De Mi*  
+
 
 Me presento, Que tal:question: :smile:  
 Mi nombre completo es **Juan Hernández Rosas** :v:  
 En la siguiente foto aparezco, no es muy reciente pero tampoco he subido a internet otra más reciente :satisfied:.  
-![Face Logo](https://scontent.fnld1-1.fna.fbcdn.net/v/t39.30808-6/256324536_3384236761806073_738943882944528086_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_ohc=ny5MGLQEhecAX8ai5Ce&tn=bjAUuu5bzHhsq0_A&_nc_ht=scontent.fnld1-1.fna&oh=00_AT_tsMdd-l_QRIZGAEyiytikzS5xkDzh_mx_NHvm8o6CpA&oe=630B177D)
-Tengo **22 años** de edad actualmente, entre a la carrera de Ingenieria en Sistemas un año más tarde a los 19 años:relieved:  
-Soy nacido en el Estado de Hidalgo, termine la prepa en Monterrey CBTIS No.22 y ahora estoy aquí :smiley: en el Tec de NLD con No. Control: **19100199**.  
+![Face Logo](https://scontent.fnld1-1.fna.fbcdn.net/v/t39.30808-6/256324536_3384236761806073_738943882944528086_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_ohc=ny5MGLQEhecAX8ai5Ce&tn=bjAUuu5bzHhsq0_A&_nc_ht=scontent.fnld1-1.fna&oh=00_AT_tsMdd-l_QRIZGAEyiytikzS5xkDzh_mx_NHvm8o6CpA&oe=630B177D)  
+Nací en el Estado de Hidalgo, tengo **22 años** de edad actualmente, entre a la carrera de Ingenieria en Sistemas un año más tarde a los 19 años:relieved:  
+
+# Historial Académico
+>*Comenzando con el **Kinder** exactamente no recuerdo el nombre de la escuela solo se que se ubica en Monterrey.  
+>La **Primaria** estuve en 3 diferentes escuelas :disappointed_relieved:, la primera en Nexpa Hidalgo llamada Nicolas Bravo, la segunda en Ciudad Juarez llamada Luis algo no recuerdo muy bien, y finalmente me gradue en Nuevo Laredo en la primaria Olvia Ramírez.   
+>La **Secundaria** estudie en la 2 llamada Juan Ruiz de Alarcón.  
+>Comence la **Preparatoria** en el CBTIS No. 137 y la termine en Monterrey en el CBTIS No.22 y ahora estoy aquí :smiley: en el Tec de NLD con No. Control: **19100199**.* :heart:  
 
   Mis pasatiempos favoritos, bueno serían;  
   * El cuidado de aniamles, bueno de los que tengo, no se si llamarle mascotas, ya que, son diversos, me gusta tener animalitos.  
