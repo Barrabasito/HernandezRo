@@ -2,8 +2,9 @@
 
 Me presento, Que tal:question: :smile:  
 Mi nombre completo es **Juan Hernández Rosas** :v:  
-![Face Logo](https://scontent.fnld1-1.fna.fbcdn.net/v/t1.6435-9/94878112_2918258685070552_7500607431194443776_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_ohc=Fc_0ooTGC8YAX9kQJnu&_nc_ht=scontent.fnld1-1.fna&oh=33d34594890bba6185ca8741bb627e03&oe=61615F79)
-Tengo **21 años** de edad, entre a la carrera de Ingenieria en Sistemas un año mas tarde :relieved:  
+En la siguiente foto aparezco, no es muy reciente pero tampoco he subido a internet otra más reciente :satisfied:.  
+![Face Logo](https://scontent.fnld1-1.fna.fbcdn.net/v/t39.30808-6/256324536_3384236761806073_738943882944528086_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_ohc=ny5MGLQEhecAX8ai5Ce&tn=bjAUuu5bzHhsq0_A&_nc_ht=scontent.fnld1-1.fna&oh=00_AT_tsMdd-l_QRIZGAEyiytikzS5xkDzh_mx_NHvm8o6CpA&oe=630B177D)
+Tengo **22 años** de edad actualmente, entre a la carrera de Ingenieria en Sistemas un año más tarde a los 19 años:relieved:  
 Soy nacido en el Estado de Hidalgo, termine la prepa en Monterrey CBTIS No.22 y ahora estoy aquí :smiley: en el Tec de NLD con No. Control: **19100199**.  
 
   Mis pasatiempos favoritos, bueno serían;  
