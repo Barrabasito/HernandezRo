@@ -33,12 +33,30 @@ Por lo tanto, comprender cómo funciona el modelo de caja CSS es una base fundam
 }  
 
 ***El contenido saldría de su elemento** y tendría 142px de ancho, en lugar de 100px. ¿Porqué sucede eso? El modelo de caja es una base fundamental de CSS y comprender cómo funciona, cómo se ve afectado por otros aspectos de CSS y, lo que es más importante, cómo puedes controlarlo te ayudará a escribir un CSS más predecible.*
-<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
 
-![]()
+*Una cosa realmente importante para recordar al escribir CSS, o al trabajar en la web en general, es que todo lo que muestra CSS es una caja. Ya sea que uses border-radius en una caja para que se parezca a un círculo, o incluso solo un texto: la clave a recordar es que todo es una caja.*
+
+>**Término clave**  
+*Cuando el contenido es demasiado grande para la caja en la que se encuentra, lo llamamos desbordamiento. Puedes definir cómo un elemento maneja el contenido de desbordamiento, utilizando la propiedad de **overflow.***  
+
+# ***Una analogía útil***
+
+*El modelo de caja es complejo de entender, así que recapitulemos lo que entendemos con una analogía.*  
+
+![Analogía](https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/FBaaJXdnuSkvOx1nB0CB.jpg?auto=format&w=845)
+
+*En este diagrama, tienes tres fotos con marcos, montados en una pared, uno al lado del otro. El diagrama tiene etiquetas que asocian elementos del marco con el modelo de caja.*
+
+*Para descomponer esta analogía:*
+
+* La caja de ***contenido*** es la obra de arte.  
+* La caja de ***padding*** es el blanco mate, entre el marco y la obra de arte.
+* La caja de ***borde*** es el marco, que proporciona un borde literal para la obra de arte.
+* La caja de ***margen*** es el espacio entre cada cuadro.
+* La sombra ocupa el mismo espacio que la caja de margen.
 
 ***
-REFERENCIAS    
+**REFERENCIAS**    
 
 PDF visto en clase: Modelo de Caja  
 https://lenguajecss.com/css/modelo-de-cajas/que-es/  
