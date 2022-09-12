@@ -9,10 +9,24 @@ ul{
     height: 500px;
 }
 ul > li > ul{
+    display: none;
+}
+ul > li:target > ul{
     display: block;
     height: 100%;
 }
-ul > li > ul{
+.opcion{
+    background: mediumaquamarine;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.subOpcion{
+    padding-left: 20px;
+    background: gray;
+    color: white;
     display: block;
     height: 100%;
 }
