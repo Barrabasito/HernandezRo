@@ -1,0 +1,28 @@
+*{
+
+}
+ul{
+list-style: none;
+width: 200px;
+height: 500px;
+}
+ul > li > ul {
+    display: none;
+}
+
+
+ul > li:hover > ul{
+    display: block;
+    height: 100%;
+}
+
+.Opcion{
+    background: blue;
+    color: white;
+}
+
+.subOpcion{
+    padding-left: 20px;
+    background: gray;
+    color: white;
+}

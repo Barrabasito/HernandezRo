@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width: 100vw;
+    height: vh;
+}
+
+
+div.content{
+    float: left;
+    width: calc(100% - 200px);
+    background-color: cadetblue;
+    padding: 1px 16px;
+    height: 100%;
+}
+.contenidoOpcion{display: none;}
+
+@media screen and (max-width: 120px){
+    div.sidebar{
+    float: none;
+    width: 100%;
+    height: auto;
+    }
+    .sidebar a{float: left;}
+
+    div.content{margin-left: 0; width: 100%;}
+}
+
+@media screen and {
+    
+}
