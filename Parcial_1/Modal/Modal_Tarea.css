@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    width: 100%;
+    height: 100%;
+}
+li{
+    text-align: center;
+    -moz-text-size-adjust: auto;
+}
+a{
+    text-decoration: none;
+}
+font{
+    color: white;
+    font-style: italic;
+}
+font.subTitulo{
+    color: silver;
+    font-style: initial;
+}
+h3{
+    color: black;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+}
+ul.opciones > li{
+    border:1px solid whitesmoke;
+    border-radius:22px;
+}
+ul.opciones > li > ul{
+    display: none;
+}
+ul.opciones > li:target > ul{
+    display: block;
+    height: 100%;
+}
+ul > li.subOpcion > ul{
+    display: none;
+}
+ul > li.subOpcion:hover > ul{
+    display: block;
+    height: 100%;
+}
+.opcion{
+    background: mediumaquamarine;
+}
+.subOpcion{
+    padding-left: 20px;
+    background: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+table{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+p{
+    text-align: justify;
+}
+td.cambiar{
+    width: 30%;
+    height: 100%;
+}
+.ventanaModal{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: silver;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+.ventanaModal:target{
+    opacity: 1;
+    pointer-events: auto;
+    background: none;
+}
+.ventanaModal > div{
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px;
+    border-radius: 10px;
+    background: aquamarine;
+}
+.botonAbrir:hover{background: blue; color: white;}
+.botonCerrar:hover{background: blue; color: white;}
