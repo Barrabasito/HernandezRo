@@ -21,7 +21,7 @@
     margin: 10% auto;
     padding: 5px;
     border-radius: 10px;
-    background: white;
+    background: aquamarine;
 }
-.botonAbrir:hover{}
-.botonCerrar:hover{}
+.botonAbrir:hover{background: blue; color: white;}
+.botonCerrar:hover{background: blue; color: white;}
