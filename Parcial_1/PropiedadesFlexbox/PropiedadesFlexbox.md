@@ -12,8 +12,10 @@
   
  - **Ítem:** Cada uno de los hijos que tendrá el contenedor en su interior.  
 <br>
-***Cómo se ve en HTML:***
-![HTML](https://8thlight.com/blog/assets/posts/2016-04-15-alleviate-frontend-dev-pains-with-flexbox/parent-collapses-clearfix-0f3263575d11cbb0c23593613ad8a95a59aef99f4952875c37d939471cc5e75e.gif)  
+***Cómo se ve en HTML:***  
+
+![HTML](https://8thlight.com/blog/assets/posts/2016-04-15-alleviate-frontend-dev-pains-with-flexbox/parent-collapses-clearfix-0f3263575d11cbb0c23593613ad8a95a59aef99f4952875c37d939471cc5e75e.gif)    
+
 ***  
 
 *Para activar el **modo flexbox**, se utiliza sobre el elemento contenedor la propiedad display, y especificar el valor flex o inline-flex (dependiendo de como queramos que se comporte el contenedor):*  
