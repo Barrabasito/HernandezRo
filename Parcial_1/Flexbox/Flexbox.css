@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    }
+    div.titulo{
+        text-align: center;
+        font-style: oblique;
+        width: 100%;
+        height: 100%;
+        font-size: large;
+        font-weight: 1000;
+        color: white;
+        background-color: black;
+    }
+    .contenedor1 {
+        display: flex;
+        background-color: silver;
+        width:100vw;
+        height:50vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .caja1 {
+        background-color: white;                                                                                                   
+        border:2px solid whitesmoke;
+        border-radius: 60px;
+        height:200px;
+        margin:2px;
+        width: 200px;
+        font-size: larger;
+        font-weight:500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* width:calc(())*/
+        text-align:center;
+        /*flex-basis: 150px;*/
+    }
+   /* #caja1 {
+        align-self: flex-start;
+    }
+    #caja6 {
+        align-self: flex-end;
+    }*/
+    #caja1 {flex-grow: 1;}
+    #caja2 {flex-grow: 2;}
+    #caja3 {flex-grow: 3;}
+    #caja4 {flex-grow: 4;}
+    #caja5 {flex-grow: 2;}
+    #caja20{flex-grow: 2;}
+    #caja21{flex-grow: 2;}
+
+    .contenedor2{
+        display: inline-flex;
+        background-color: white; 
+        padding: 15px;
+        border: 3px solid brown;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+    }
+    .caja2 {
+        background-color: greenyellow;                                                                                                   
+        border:2px solid whitesmoke;
+        border-radius: 60px;
+        height:100px;
+        margin:2px;
+        width: 100px;
+        font-size: larger;
+        font-weight:500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* width:calc(())*/
+        text-align:center;
+    }
+    .contenedor3{
+        display: inline-flex;
+        background-color: white;
+        flex-direction: row-reverse;
+        padding: 15px;
+        border: 3px solid brown;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+    }
+    .caja3 {
+        background-color: rgb(47, 137, 255);                                                                                                   
+        border:2px solid whitesmoke;
+        border-radius: 60px;
+        height:100px;
+        margin:2px;
+        width: 100px;
+        font-size: larger;
+        font-weight:500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align:center;
+    }
