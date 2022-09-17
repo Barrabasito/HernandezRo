@@ -12,6 +12,7 @@
   
  - **Ítem:** Cada uno de los hijos que tendrá el contenedor en su interior.  
 <br>
+
 ***Cómo se ve en HTML:***  
 
 ![HTML](https://8thlight.com/blog/assets/posts/2016-04-15-alleviate-frontend-dev-pains-with-flexbox/parent-collapses-clearfix-0f3263575d11cbb0c23593613ad8a95a59aef99f4952875c37d939471cc5e75e.gif)    
@@ -40,9 +41,11 @@ Valor |                    Descripción                       |
 **row-reverse** | Establece la dirección del eje principal en horizontal (invertido).|
 **column** | 	Establece la dirección del eje principal en vertical.|
 **column-reverse** | Establece la dirección del eje principal en vertical (invertido).|  
+
 <br>
+
 # ***Contenedor flexbox multilínea***
-*Por otro lado, existe otra propiedad llamada **flex-wrap** con la que podemos especificar el comportamiento del contenedor respecto a evitar que se desborde (nowrap, valor por defecto) o permitir que lo haga, en cuyo caso, estaríamos hablando de un contenedor flexbox multilinea.*
+*Por otro lado, existe otra propiedad llamada **flex-wrap** con la que podemos especificar el comportamiento del contenedor respecto a evitar que se desborde (nowrap, valor por defecto) o permitir que lo haga, en cuyo caso, estaríamos hablando de un contenedor flexbox multilinea.*  
 
 Propiedad |                    Valor                         | Significado |
 -------------- | --------------------------------------------| ------------|
@@ -54,13 +57,15 @@ Valor |                    Descripción                       |
 **nowrap** | Establece los ítems en una sola línea (no permite que se desborde el contenedor).|
 **wrap** | Establece los ítems en modo multilínea (permite que se desborde el contenedor).|
 **wrap-reverse** | Establece los ítems en modo multilínea, pero en dirección inversa.|
+
 <br>
+
 # ***Atajo: Dirección de los ejes***
 *Recuerda que existe una propiedad de atajo (short-hand) llamada **flex-flow**, con la que podemos resumir los valores de las propiedades **flex-direction y flex-wrap**, especificándolas en una sola propiedad y ahorrándonos utilizar las propiedades concretas:*
->**.container {  
- /*** flex-flow: <**flex-direction**> <**flex-wrap**>; ***/  
+>.container {  
+ /* flex-flow: <**flex-direction**> <**flex-wrap**>; */  
   flex-flow: row wrap;  
-}**  
+}
 
 <br>
 
