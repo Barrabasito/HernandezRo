@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#miBoton1{
+    float: left;
+    border: 2px solid red;
+    width: calc((100% / 3) - 4px);
+    height: 100px;
+    text-align: center;
+    margin: 2px;
+}
+#miBoton2{
+    float: left;
+    border: 2px solid red;
+    width: calc((100% / 3) - 4px);
+    height: 100px;
+    text-align: center;
+    margin: 2px;
+}
+#miBoton3{
+    float: left;
+    border: 2px solid red;
+    width: calc((100% / 3) - 4px);
+    height: 100px;
+    text-align: center;
+    margin: 2px;
+}

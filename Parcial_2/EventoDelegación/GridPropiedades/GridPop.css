@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 30% 30% 20%;
+    grid-template-areas: 'menulat menulat menulat'
+                         'encabezado columna1 columna2'
+                         'columna3 columna4 columna5'
+                         'piepagina piepagina piepagina';
+    justify-content: center;
+    justify-items: stretch;
+    align-content: center;
+    align-items: stretch;
+}
+div{
+  font-style: italic;
+  font-size: 50px;
+}
+div.caja1{
+    /*width: 100%;
+    height: 100%;*/
+    background-color: black;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    border-radius: 16px;  
+    color: white;
+}
+.caja2{
+  background-color: red;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 16px;
+}
+.caja3{
+  background-color: orange;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 16px;
+}
+.caja4{
+  background-color: yellow;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 16px;
+}
+.caja5{
+  background-color: green;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 16px;
+}
+.caja6{
+  background-color: rgb(0, 225, 255);
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 16px;
+}
+.caja7{
+  background-color: rgb(0, 51, 128);
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 16px;
+}
+
+#caja1{
+  grid-area: menulat;
+}
+#caja2{
+  grid-area: encabezado;
+}
+#caja3{
+  grid-area: columna1;
+}
+#caja4{
+  grid-area: columna2;
+}
+#caja5{
+  grid-area: columna3;
+}
+#caja6{
+  grid-area: columna4;
+}
+#caja7{
+  grid-area: columna5;
+}
+#caja8{
+  grid-area: piepagina;
+}

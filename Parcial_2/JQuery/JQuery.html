@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutGrid</title>
+    <link rel="stylesheet" href="JQuery.css">
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div id="cont" class="contenedor">
+        <div id="caja1" class="caja">Caja 1</div>
+        <div id="caja2" class="caja">Caja 2</div>
+        <div id="caja3" class="caja" onclick="alert('Has dado Click en la Caja 3')">Caja 3</div>
+        <div id="caja4" class="caja">Caja 4</div>
+        <div id="caja5" class="caja">Caja 5</div>
+    </div>
+    <script type="text/javascript">
+       /* window.onload=function(){
+        document.getElementById("caja1").onclick=function(){alert("Has dado Click en la Caja 1");}
+        document.querySelector("#caja2").addEventListener("click",miFunction);
+
+        function miFunction(){
+            alert("Has dado Click en la Caja 2");
+        }
+        }    */  
+        $(document).ready(function(){
+            $('#caja2').click(function(){
+              alert('Se escucha el click con la libreria Query');
+            });
+        });
+        $(document).ready(function(){
+            $('#caja4').hide(function(){
+              alert('Se desaparecio la caja 4');
+            });
+        });
+    </script>
+</body>
+</html>
