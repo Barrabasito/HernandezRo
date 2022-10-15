@@ -7,7 +7,7 @@
 .contenedor{
     width: 100vw;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: white;
 }
 .check {
     border: 2mm solid #2e518b; 
@@ -28,10 +28,12 @@ div.sideBar{
 
 input {display: none;}
 
-input:checked + .sideBar #opc{
+input:checked + .sideBar{
     display: none;
 }
-
+input:checked  .sideBar{
+    display: none;
+}
 a{
     display: block;
     text-decoration: none;
@@ -52,9 +54,7 @@ div.content{
     height: 100%;
     background-color: white;
     padding: 1px 16px;
- 
 }
-
 .contenedorOpcion{
     display: none;
 }
