@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+div{
+    border-radius: 15px;
+}
+.head{
+    background-color: aquamarine;
+}
+.col1{
+    background-color: silver
+}
+.col2{
+    background-color: whitesmoke
+}
+.col3{
+    background-color: gold
+}
+.col4{
+    background-color: burlywood
+}
+.col5{
+    background-color: black
+}
+.col6{
+    background-color: silver
+}

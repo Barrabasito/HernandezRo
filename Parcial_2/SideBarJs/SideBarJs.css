@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+.check {
+    border: 2mm solid #2e518b; 
+    width: 100%;
+    background-color: #2e518b; 
+    color: white; 
+    text-transform: uppercase; 
+    font-family: 'Helvetica', sans-serif; 
+    border-radius: 5px; 
+    }
+div.sideBar{
+    float: left;
+    background-color: green;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+input {display: none;}
+
+input:checked + .sideBar{
+    display: none;
+}
+input:checked  .sideBar{
+    display: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-family: 'Helvetica', sans-serif; 
+    color: white;
+    padding: 10px;
+}
+
+a:hover{
+    background-color: blue;
+    color: white;
+}
+
+div.content{
+    float:left;
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: white;
+    padding: 1px 16px;
+}
+.contenedorOpcion{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    div.sideBar {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .sideBar a{ float: left;}
+
+    div.content { margin-left: 0;
+    width: 100%;}
+
+}
+    
+@media screen and (max-width: 600px){
+    .sideBar a {
+        float: none;
+        text-align: center;
+    }
+}
+li{
+    text-align: center;
+    -moz-text-size-adjust: auto;
+}
+font{
+    color: white;
+    font-style: italic;
+}
+font.subTitulo{
+    color: silver;
+    font-style: initial;
+}
+h3{
+    color: black;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+}
+ul.opciones > li{
+    border:1px solid whitesmoke;
+    border-radius:22px;
+}
+ul.opciones > li > ul{
+    display: none;
+}
+ul.opciones > li:target > ul{
+    display: block;
+    height: 100%;
+}
+ul > li.subOpcion > ul{
+    display: none;
+}
+ul > li.subOpcion:hover > ul{
+    display: block;
+    height: 100%;
+}
+.opcion{
+    background: mediumaquamarine;
+}
+.subOpcion{
+    padding-left: 20px;
+    background: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+table{
+    background: white;
+}
+p{
+    text-align: justify;
+}
+td.cambiar{
+    width: 30%;
+    height: 100%;
+}
+.ventanaModal{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: silver;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+.ventanaModal:target{
+    opacity: 1;
+    pointer-events: auto;
+    background: none;
+}
+.ventanaModal > div{
+    width: calc(100% - 200px);
+    position: relative;
+    margin: 10% auto;
+    padding: 5px;
+    border-radius: 10px;
+    background: aquamarine;
+}
+.botonAbrir{
+    border-radius: 5px;
+    color: black;
+    background-color: whitesmoke;
+}
+.botonAbrir:hover{background: blue; color: white;}
+.botonCerrar:hover{background: blue; color: white;}
