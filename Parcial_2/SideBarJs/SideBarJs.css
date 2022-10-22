@@ -3,60 +3,57 @@
     margin: 0;
     padding: 0;
 }
-
-.contenedor{
-    width: 100vw;
+#cont1{
     height: 100vh;
+    color: white;
+}
+#cont2{
+    float: left;
+    width: calc(100% - 200px);
+    height: 100%;
+    color: black;
+}
+div.menu img{
     background-color: white;
+    border-radius: 15px;
+}
+div.menu{
+    width: 200px;
+    height: 50px;
+    text-align: center;
 }
 .check {
-    border: 2mm solid #2e518b; 
-    width: 100%;
-    background-color: #2e518b; 
+    border: 0.5mm solid white; 
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(77,114,140,255); 
     color: white; 
     text-transform: uppercase; 
     font-family: 'Helvetica', sans-serif; 
-    border-radius: 5px; 
+    float: left;
     }
 div.sideBar{
+    border: 0.5mm solid whitesmoke;
+    border-radius: 5px;
     float: left;
     background-color: green;
     width: 200px;
     height: 100%;
-    overflow: auto;
 }
-
-input {display: none;}
-
-input:checked + .sideBar{
-    display: none;
-}
-input:checked  .sideBar{
-    display: none;
-}
-a{
+a#opc{
     display: block;
     text-decoration: none;
     text-transform: uppercase; 
     font-family: 'Helvetica', sans-serif; 
     color: white;
     padding: 10px;
+    border-bottom: 2px solid whitesmoke;
 }
 
-a:hover{
+a#opc:hover{
     background-color: blue;
     color: white;
-}
-
-div.content{
-    float:left;
-    width: calc(100% - 200px);
-    height: 100%;
-    background-color: white;
-    padding: 1px 16px;
-}
-.contenedorOpcion{
-    display: none;
 }
 
 @media screen and (max-width: 1200px){
@@ -67,7 +64,7 @@ div.content{
     }
     .sideBar a{ float: left;}
 
-    div.content { margin-left: 0;
+    div.cont1 { margin-left: 0;
     width: 100%;}
 
 }
@@ -81,6 +78,7 @@ div.content{
 li{
     text-align: center;
     -moz-text-size-adjust: auto;
+    display: block;
 }
 font{
     color: white;
@@ -152,7 +150,7 @@ td.cambiar{
     background: none;
 }
 .ventanaModal > div{
-    width: calc(100% - 200px);
+    width: calc(100% - 1500px);
     position: relative;
     margin: 10% auto;
     padding: 5px;
