@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridPop/Propagación de Eventos</title>
+    <link rel="stylesheet" href="GridPop.css">
+    <script src="XMLTHTTP.js"></script>
+</head>
+<body>
+    <div id="cont" class="contenedor">
+        <div id="headerdiv">
+        <button id="btnajax" type="button">Cambiar</button>
+        <button id="btnreset" type="button">Regresar</button>
+    </div>
+        <div id="caja1" class="caja1">Cambiar</div>
+        <div id="caja2" class="caja2">Caja 2</div>
+        <div id="caja3" class="caja3">Caja 3</div>
+        <div id="caja4" class="caja4">Caja 4</div>
+        <div id="caja5" class="caja5">Caja 5</div>
+        <div id="caja6" class="caja6">Caja 6</div>
+        <div id="caja7" class="caja7">Caja 7</div>
+        <div id="caja8" class="caja8">Regresar</div>
+    </div>
+    <script type="text/javascript">      
+        var elem=document.getElementById("cont");
+        elem.addEventListener("click",cambiarCaja);
+        function cambiarCaja(evento){
+            console.log(evento);
+            if(document.getElementById(evento.target.id).classList.contains("caja1")){
+                document.getElementById(evento.target.id).classList.toggle("cajaBlanca");              
+            }
+           /* if(evento.target.id=="#caja2"){
+                elem.removeEventListener("click",cambiarCaja);*/    
+                if(document.getElementById(evento.target.id).classList.contains("caja2")){
+                document.getElementById(evento.target.id).classList.toggle("cajaBlanca");              
+            } 
+            if(document.getElementById(evento.target.id).classList.contains("caja3")){
+                document.getElementById(evento.target.id).classList.toggle("cajaBlanca");              
+            } 
+            if(document.getElementById(evento.target.id).classList.contains("caja4")){
+                document.getElementById(evento.target.id).classList.toggle("cajaBlanca");              
+            } 
+            if(document.getElementById(evento.target.id).classList.contains("caja5")){
+                document.getElementById(evento.target.id).classList.toggle("cajaBlanca");              
+            } 
+            if(document.getElementById(evento.target.id).classList.contains("caja6")){
+                document.getElementById(evento.target.id).classList.toggle("cajaBlanca");              
+            }
+            if(document.getElementById(evento.target.id).classList.contains("caja7")){
+                document.getElementById(evento.target.id).classList.toggle("cajaBlanca");              
+            }  
+            if(document.getElementById(evento.target.id).classList.contains("caja8")){
+                document.getElementById(evento.target.id).classList.toggle("cajaBlanca");              
+            } 
+        }
+       /* let vboton2=document.querySelector('#boton2').addEventListener('click',function(evento){
+            evento.stopImmediatePropagation();
+            console.log('click en boton 2 funcion 2')
+        });
+        
+        document.querySelector('#boton2').addEventListener('click',function(evento){
+
+        })
+         
+        //Registra manejador de evento click solo en el contenido
+        document.querySelector('#contenedor').addEventListener('click',function(evento){
+
+        })*/
+   
+    </script>
+</body>
+</html>

@@ -1,18 +1,21 @@
 window.onload=function()
 {
-    document.getElementById("boton2").addEventListener("click",pedirHeader);
+
+    document.getElementById("btnajax").addEventListener("click",pedirHeader);
+    document.getElementById("btnreset").addEventListener("click",iniciarHeader);
+
     function pedirHeader()
     {
         var solicitud = new XMLHttpRequest();
 
         solicitud.onreadystatechange=function() {
         if(solicitud.readyState==4 && solicitud.status==200){
-            document.getElementById("MyDiv").innerHTML=solicitud.responseText;
+            document.getElementById("headerdiv").innerHTML=solicitud.responseText;
         }};
-        solicitud.open("GET","Archivo_Cargar.txt",true);
+        solicitud.open("GET","Archivo.txt",true);
         solicitud.send();
 }
 function iniciarHeader(){
-    document.getElementById("MyDiv").innerHTML="<h2>Este es un Header Nivel 2 <h2>"
+    document.getElementById("headerdiv").innerHTML="<h2>Este es un Header Nivel 2 <h2>";
 }
 }
