@@ -10,12 +10,12 @@ window.onload=function()
 
         solicitud.onreadystatechange=function() {
         if(solicitud.readyState==4 && solicitud.status==200){
-            document.getElementById("headerdiv").innerHTML=solicitud.responseText;
+            document.getElementById("request").innerHTML=solicitud.responseText;
         }};
         solicitud.open("GET","Archivo.txt",true);
         solicitud.send();
 }
 function iniciarHeader(){
-    document.getElementById("headerdiv").innerHTML="<h2>Este es un Header Nivel 2 <h2>";
+    document.getElementById("request").innerHTML="<h2>Este es un Header Nivel 2 <h2>";
 }
 }
