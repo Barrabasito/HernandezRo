@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+}
+body{
+    background-color: coral;
+}
+#cont{
+    background-color: whitesmoke;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+}
