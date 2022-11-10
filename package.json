@@ -1,0 +1,22 @@
+{
+  "name": "hernandezro",
+  "version": "1.0.0",
+  "description": "![Tec Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tecnologico_Nacional_de_Mexico.svg/1200px-Tecnologico_Nacional_de_Mexico.svg.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barrabasito/HernandezRo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barrabasito/HernandezRo/issues"
+  },
+  "homepage": "https://github.com/Barrabasito/HernandezRo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
