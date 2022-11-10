@@ -1,5 +1,5 @@
-const modulo=require("./ModuloCommon");
-var cowsay = require("cowsay");
+const modulo=require("./ModuloCommonJs");
+const cowsay = require("cowsay");
 
 console.log(modulo.cuadrado(2));
 
