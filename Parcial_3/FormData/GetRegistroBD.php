@@ -1,14 +1,14 @@
 <?php
-//$id=$_POST['idN'];
-$id=2;
+$id=$_POST['id'];
+//$id=1;
 
 $servidor="localhost";
-$basedatos="automatas";
+$basedatos="items";
 $usuario="root";
 $password="";
 
 $con = mysqli_connect($servidor,$usuario,$password,$basedatos) or die("No se pudo conectar al localhost");
-$consulta ="select * from matriz where Estado=$id";
+$consulta ="select * from itemsminecraft where Id=$id";
 $registros = mysqli_query($con,$consulta) or die("Problemas en el select");
 
 
