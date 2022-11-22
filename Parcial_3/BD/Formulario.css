@@ -4,26 +4,35 @@
     padding: 10px;
     font-family: 'Minecraft', sans-serif;
 }
-div.titulo{
-    width: 50%;
+div.titulo{ 
     text-align: center;
     padding: 2px;
-    background-color: #75FF6A;    
+    background-image: url('Imagenes/Pasto.jpg');
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;                                         
 }
 form{
-    width: 50%;
     background-color: #00C993;
-    background-image: url('Imagenes/Minecraft.jpg');
+    background-image: url('Imagenes/Tierra.jpg');
     padding-bottom: 80px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+.padre{
+    position: relative;
+}
+.modal-content{
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    left: -265px;
+    width: 1050px;
+}
+
 label{
     text-align: center;
     background-color: silver;
-    border-radius: 50px;
+    border-radius: 5px;
     width: 100%;
 }
 textarea{

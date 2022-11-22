@@ -1,4 +1,5 @@
 <?php
+//$GET["par"];
 $id=$_POST['id'];
 //$id=1;
 
