@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Formulario.css">
+  </head>
+  <body>
+    <div class="titulo"><h2>Items de Minecraft</h2></div>
+    <form id="formulario"> 
+
+    <div class="row">
+      <div class="form-group col-sm-12 col-md-6 col-lg-1">
+        <label for="idItem" class="form-label">ID</label>
+        <input type="number" name="id" class="form-control" id="idItem">
+    </div>
+
+    <div class="form-group col-sm-12 col-md-6 col-lg-3">
+      <label for="idNombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" name="idNombre" id="idNombre">
+  </div>
+
+      
+    <div class="form-group col-sm-12 col-md-6 col-lg-2">
+      <label for="idCantidad" class="form-label">Cantidad</label>
+      <input type="number" class="form-control" id="idCantidad">
+  </div>
+
+  <div class="form-group col-sm-12 col-md-6 col-lg-3">
+    <label for="idColor" class="form-label">Color</label>
+    <input type="text" class="form-control" id="idColor">
+  </div>
+
+<div class="form-group col-sm-12 col-md-6 col-lg-3">
+  <label for="idCategoria" class="form-label">Categoria</label>
+    <select class="form-control" name="idCategoria" id="idCategoria">
+      <option value="Armaduras">Armaduras</option>
+      <option value="Herramientas">Herramientas</option>
+      <option value="Libros encantados">Libros encantados</option>
+      <option value="Posiones">Posiones</option>
+      <option value="Bloques de madera">Bloques de madera</option>
+      <option value="Bloques de minerales">Bloques de minerales</option>
+      <option value="Lozas de maderas">Lozas de madera</option>
+      <option value="Lozas de minerales">Lozas de minerales</option>
+      <option value="Mineral Individual">Mineral Individual</option>
+      <option value="Comida">Comida</option>
+      <option value="Otro">Otro</option>
+    </select>
+</div>
+</div>
+
+<div class="row">
+  <div class="form-group col-sm-12 col-md-6 col-lg-3">
+    <label for="idDurabilidad" class="form-label">Durabilidad</label>
+    <input type="text" class="form-control" id="idDurabilidad">
+</div>  
+
+<div class="form-group col-sm-12 col-md-6 col-lg-4">
+  <label for="idMateriales" class="form-label">Materiales de Crafteo</label>
+  <input type="text" class="form-control" id="idMateriales"></input >
+</div>
+
+<div class="form-group col-sm-12 col-md-6 col-lg-5">
+  <label for="idCantidadT" class="form-label">Cantidad Total de Items para Crafteo</label>
+  <input type="number" class="form-control" id="idCantidadT">
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group col-sm-12 col-md-6 col-lg-5">
+    <label for="idEfecto" class="form-label">Efecto*</label>
+    <input type="text" class="form-control" id="idEfecto">
+  </div>
+
+  <div class="form-group col-sm-12 col-md-6 col-lg-4">
+    <label for="idFecha" class="form-label">Fecha de version de Salida</label>
+    <input type="date" name="Fecha" class="form-control" id="idFecha">
+    </div>
+  </div>
+</div>
+
+  <div class="row"> 
+  <textarea id="idDesc" name="descripcion" rows="4" cols="50" placeholder="Descripcion de uso aqui"></textarea>
+</div>
+
+<div>
+    <button type="submit" class="btn btn-primary">Capturar</button> 
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Toast</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Modal</button>
+    <button id="btnGet" type="button" class="btnCargar">Cargar registro</button> 
+</div>
+
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Se han capturado los datos
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Juan Hernandez Rosas</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        #19100199
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</form>
+<script>
+  document.getElementById("btnGet").addEventListener("click",async()=>{
+var datosFormulario=new FormData(document.getElementById("formulario"));
+let respuesta=await fetch('GetRegistroBD.php',{
+  method: 'POST',
+  body: datosFormulario
+})
+let dato=await respuesta.json();
+document.getElementById("idItem").value=dato.Id;
+document.getElementById("idNombre").value=dato.Nombre;
+document.getElementById("idCantidad").value=dato.Cantidad;
+document.getElementById("idColor").value=dato.Color;
+document.getElementById("idCategoria").value=dato.Categoria;
+document.getElementById("idDurabilidad").value=dato.Durabilidad;
+document.getElementById("idMateriales").value=dato.Materiales;
+document.getElementById("idCantidadT").value=dato.Cantidad_Materiales;
+document.getElementById("idEfecto").value=dato.Efecto;
+document.getElementById("idFecha").value=dato.Fecha;
+document.getElementById("idDesc").value=dato.Descripcion;
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="ModalAndToast.js"></script> -->
+<!-- <script>
+  //json viwer
+  
+// document.getElementById("btnGet").addEventListener("clcik",function(){
+// console.log("click");
+// fetch('GetRegistro.php')
+// .then(respuesta=>respuesta.json())
+// .then(dato=>refrescar(dato));
+
+// function refrescar(reg){
+//   document.getElementById("idNombre").value=reg.nombre;
+// }
+//   });
+
+document.getElementById("btnGet").addEventListener("click",async()=>{
+let res=await fetch('GetRegistro.php');
+let dato=await res.json();
+document.getElementById("idFecha").value=dato.fecha;
+document.getElementById("idMarca").value=dato.marca;
+document.getElementById("idNombre").value=dato.nombre;
+document.getElementById("idPrecio").value=dato.precio;
+document.getElementById("idTalla").value=dato.talla;
+document.getElementById("idColor").value=dato.color;
+document.getElementById("idCantidad").value=dato.cantidad;
+document.getElementById("idCategoria").value=dato.categoria;
+document.getElementById("idDesc").value=dato.desc;
+  }); -->
+
+<!-- </script> -->
+  </body>
+</html>

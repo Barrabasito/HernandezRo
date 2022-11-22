@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Minecraft', sans-serif;
+}
+div.titulo{
+    width: 50%;
+    text-align: center;
+    padding: 2px;
+    background-color: #75FF6A;    
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;                                         
+}
+form{
+    width: 50%;
+    background-color: #00C993;
+    background-image: url('Imagenes/Minecraft.jpg');
+    padding-bottom: 80px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+label{
+    text-align: center;
+    background-color: silver;
+    border-radius: 50px;
+    width: 100%;
+}
+textarea{
+    background-color: whitesmoke;
+}
+.btnCargar{
+    float: right;
+    text-decoration: none;
+    width:25%;
+    border: 3px solid black;
+    border-radius:50px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    font-size: 30px; 
+  }
+
+  .btnCargar:hover{
+    background:black;
+    color:white;
+
+  }
