@@ -2,13 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 10px;
-    font-family: 'Minecraft', sans-serif;
 }
+
+body {
+    background-image: url('Imagenes/Minecraft.jpg');
+    background-position: center;
+    background-size:cover;
+  }
+
 .registros{
-    overflow:scroll;
-     width: 100%;
+    overflow:scroll;  
      height: 500px;
+     width: -200px;
 }
+
 div.titulo{ 
     text-align: center;
     padding: 2px;
@@ -22,6 +29,7 @@ form{
     padding-bottom: 80px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    font-family: 'Minecraft', sans-serif;
 }
 .padre{
     position: relative;
@@ -46,7 +54,7 @@ textarea{
 .btnCargar{
     float: right;
     text-decoration: none;
-    width:25%;
+    width:40%;
     border: 3px solid black;
     border-radius:50px;
     text-decoration: none;
