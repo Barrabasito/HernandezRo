@@ -18,11 +18,12 @@
 
 //(async () => {
 async function Datos(){
-    let headersList = {
- "Accept": "*/*",
+
+  let headersList = {
+ "Accept": "*/*"
 }
 
-let response = await fetch("http://localhost/HernandezRo/Parcial_3/Grid/Clase/connect.php", { 
+let response = await fetch("http://localhost/HernandezRo/Parcial_3/Grid/GridJS/connect.php", { 
   method: "GET",
   headers: headersList
 });
@@ -30,16 +31,10 @@ let response = await fetch("http://localhost/HernandezRo/Parcial_3/Grid/Clase/co
 let datos = await response.json();
 console.log(datos);
 
+
 new gridjs.Grid({
-  columns: ["Name", "Email", "Phone Number"],
+  columns: ["Id", "Nombre", "Cantidad", "Color", "Categoria", "Durabilidad",, "Materiales",, "Cantidad_Materiales", "Efecto", "Fecha", "Descripcion"],
   data: datos
-//   [
-//     ["John", "john@example.com", "(353) 01 222 3333"],
-//     ["Mark", "mark@gmail.com", "(01) 22 888 4444"],
-//     ["Eoin", "eoin@gmail.com", "0097 22 654 00033"],
-//     ["Sarah", "sarahcdd@gmail.com", "+322 876 1233"],
-//     ["Afshin", "afshin@mail.com", "(353) 22 87 8356"]
-//   ]
 }).render(document.getElementById("wrapper"));
 }
 
