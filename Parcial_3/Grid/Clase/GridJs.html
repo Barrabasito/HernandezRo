@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridJs</title>
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div id="wrapper"></div>
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script>
+
+//(async () => {
+async function Datos(){
+    let headersList = {
+ "Accept": "*/*",
+}
+
+let response = await fetch("http://localhost/HernandezRo/Parcial_3/Grid/Clase/connect.php", { 
+  method: "GET",
+  headers: headersList
+});
+
+let datos = await response.json();
+console.log(datos);
+
+new gridjs.Grid({
+  columns: ["Name", "Email", "Phone Number"],
+  data: datos
+//   [
+//     ["John", "john@example.com", "(353) 01 222 3333"],
+//     ["Mark", "mark@gmail.com", "(01) 22 888 4444"],
+//     ["Eoin", "eoin@gmail.com", "0097 22 654 00033"],
+//     ["Sarah", "sarahcdd@gmail.com", "+322 876 1233"],
+//     ["Afshin", "afshin@mail.com", "(353) 22 87 8356"]
+//   ]
+}).render(document.getElementById("wrapper"));
+}
+
+Datos();
+//})();
+    </script>
+</body>
+</html>
