@@ -5,23 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulario Items</title>
     <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="src/css/bootstrap.min.css">
+   <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Formulario.css">
   </head>
   <body>
-   
-    <div class="registros">
-    <table class="table table-sm" align="center">
-      <thead>
-      <tr align="center"><th colspan="12">Registros de Items de Minecraft</th></tr>
-      <tr align="center"><th>Id</th><th>Nombre</th><th></th><th>Cantidad</th><th>Color</th><th>Categoria</th><th>Durabilidad</th><th>Efecto</th><th>Materiales Crafteo</th><th>Cantidad Materiales</th><th>Fecha Versión</th><th>Descripción</th></tr>
-      </thead>
-      <tbody>
-        <tr><td id="id"></td><td>...</td><td>...</td><td>.....................................</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><th></th></tr>
-      </tbody>
-  </table>
-</div>
-
+   <div id="tablaDatos"><div id="registros"></div></div>
+    
 
 <div>
     <button type="submit" class="btn btn-primary">Capturar</button> 
@@ -147,9 +140,38 @@
   </div>
 </div>
 </div>
-
-<script src="./Get.js"></script>
+<script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+<script src="src/js/Get.js"></script>
+<script src="src/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+//(async () => {
+async function Datos(){
+
+  let headersList = {
+ "Accept": "*/*"
+}
+
+let response = await fetch("http://localhost/HernandezRo/Parcial_3/Grid/GridJS/connect.php", { 
+  method: "GET",
+  headers: headersList
+});
+
+let datos = await response.json();
+console.log(datos);
+
+
+
+new gridjs.Grid({
+  columns: ["Id", "Nombre", "Cantidad", "Color", "Categoria", "Durabilidad",, "Materiales",, "Cantidad_Materiales", "Efecto", "Fecha", "Descripcion"],
+  data: datos
+}).render(document.getElementById("registros"));
+}
+
+Datos();
+//})();
+    </script>
   </body>
 </html>

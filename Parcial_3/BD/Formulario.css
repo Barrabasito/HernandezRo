@@ -5,27 +5,30 @@
 }
 
 body {
-    background-image: url('Imagenes/Minecraft.jpg');
+    background-image: url('src/Imagenes/Minecraft.jpg');
     background-position: center;
     background-size:cover;
   }
 
-.registros{
-    overflow:scroll;  
-     height: 500px;
-     width: -200px;
+  div#tablaDatos{
+    overflow: scroll;
+    width: 1300px;
+  }
+
+#registros{ 
+     width: 2300px;
 }
 
 div.titulo{ 
     text-align: center;
     padding: 2px;
-    background-image: url('Imagenes/Pasto.jpg');
+    background-image: url('src/Imagenes/Pasto.jpg');
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;                                         
 }
 form{
     background-color: #00C993;
-    background-image: url('Imagenes/Tierra.jpg');
+    background-image: url('src/Imagenes/Tierra.jpg');
     padding-bottom: 80px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
