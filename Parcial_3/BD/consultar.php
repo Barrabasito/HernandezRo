@@ -1,7 +1,5 @@
 <?php
-//$GET["par"];
 $id=$_POST['id'];
-//$id=1;
 
 $servidor="localhost";
 $basedatos="items";
