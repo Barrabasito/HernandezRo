@@ -50,8 +50,8 @@ body{
     background-image: url('src/Imagenes/fondo.png');
     background-size:cover;
     padding-top: 80px;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
 body.fondo {
@@ -59,8 +59,8 @@ body.fondo {
     background-position: center;
     background-size:cover;
     padding-top: 80px;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
 div.buscador{
